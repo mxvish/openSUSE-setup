@@ -34,6 +34,7 @@ sudo zypper install -y brave-browser
 
 sudo zypper install -y chrome-gnome-shell
 sudo zypper install -y ibus-mozc
+sudo zypper install -y neofetch
 
 sudo zypper install -y python-tkinter
 sudo zypper install -y R-core
