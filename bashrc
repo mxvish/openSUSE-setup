@@ -8,6 +8,11 @@
 #systemctl get-default
 #sudo systemctl set-default multi-user.target(graphical.target)
 
+function as {
+    local url="https://amazon.co.jp/s?k="
+    url+=${@}
+    brave-browser $url
+}
 alias b='brave-browser'
 alias c='java ~/first/cd.java'
 alias ca='cat /sys/class/power_supply/BAT1/capacity'
@@ -36,6 +41,12 @@ alias sz='sudo zypper install -y'
 alias ss='systemctl suspend -i'
 alias t='brave-browser todoist.com/app/upcoming'
 alias u='sudo zypper update -y; sudo zypper dist-upgrade -y'
+function us {
+    local url="https://opac.lib.shizuoka.ac.jp/opac/xc/search/"
+    url+=${@}
+    url+="?filter[0]=place_fc%3A"HAMA""
+    brave-browser $url
+}
 alias v='vim'
 alias visa='brave-browser docs.google.com/spreadsheets/d/1iuQ-DxULNRZp0QisqnwkH33GpLA8dkec/'
 alias vpn='brave-browser https://vpn.inf.shizuoka.ac.jp/dana-na/auth/url_3/welcome.cgi'
@@ -96,7 +107,8 @@ gsettings set org.gnome.shell favorite-apps []
 
 #configure system settings from tweaks-----------------------------
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.2
-gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"
+#gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"
+setxkbmap -option "ctrl:nocaps"
 gsettings set org.gnome.desktop.search-providers disable-external true
 
 PROMPT_COMMAND="printf '\n';$PROMPT_COMMAND"
