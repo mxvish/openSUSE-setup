@@ -107,8 +107,7 @@ gsettings set org.gnome.shell favorite-apps []
 
 #configure system settings from tweaks-----------------------------
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.2
-#gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"
-setxkbmap -option "ctrl:nocaps"
+gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"
 gsettings set org.gnome.desktop.search-providers disable-external true
 
 PROMPT_COMMAND="printf '\n';$PROMPT_COMMAND"
