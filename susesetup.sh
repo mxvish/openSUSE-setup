@@ -21,7 +21,7 @@ sudo zypper remove -y gnome-weather
 sudo zypper remove -y rhythmbox
 sudo zypper remove -y cheese
 sudo zypper remove -y gnome-calculator polari quadrapassel swell-foop
-sudo zypper remove -y gnome-clocks gnome-chess gnome-mahjongg gnome-mines gnome-music gnome-sudoku gnome-tweaks
+sudo zypper remove -y gnome-clocks gnome-chess gnome-mahjongg gnome-mines gnome-music gnome-sudoku gnome-tweaks lightsoff iagno
 
 sudo zypper update -y
 sudo zypper dist-updrade -y
