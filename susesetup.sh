@@ -52,7 +52,6 @@ gsettings set org.gnome.desktop.notifications show-in-lock-screen false
 xrandr --output HDMI-1 --left-of eDP-1 
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'mozc-jp')]"
 timedatectl set-timezone Asia/Tokyo
-gsettings set org.gnome.desktop.interface gtk-key-theme 'Emacs'
 
 gsettings set org.gnome.desktop.interface enable-animations false
 gsettings set org.gnome.software download-updates false
