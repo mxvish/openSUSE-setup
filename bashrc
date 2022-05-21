@@ -104,6 +104,7 @@ xrandr --output HDMI-1 --left-of eDP-1
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'mozc-jp')]"
 timedatectl set-timezone Asia/Tokyo
 gsettings set org.gnome.shell favorite-apps []
+eval `dircolors ~/.colorrc`
 
 #configure system settings from tweaks-----------------------------
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.2
