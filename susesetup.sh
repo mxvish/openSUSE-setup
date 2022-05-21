@@ -2,6 +2,7 @@
 mv bashrc .bashrc
 mv -f user-dirs.dirs .config/
 sudo mv custom.conf /etc/gdm/
+mv colorrc .colorrc
 
 mv Desktop .Desktop
 mv Downloads .Downloads
