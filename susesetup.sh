@@ -25,7 +25,7 @@ sudo zypper remove -y gnome-calculator polari quadrapassel swell-foop
 sudo zypper remove -y gnome-clocks gnome-chess gnome-mahjongg gnome-mines gnome-music gnome-sudoku gnome-tweaks lightsoff iagno
 
 sudo zypper update -y
-sudo zypper dist-updrade -y
+sudo zypper updrade -y
 
 #install-----------------------------
 sudo zypper install curl
