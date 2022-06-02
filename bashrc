@@ -40,7 +40,7 @@ alias sr='sudo zypper remove -y'
 alias sz='sudo zypper install -y'
 alias ss='systemctl suspend -i'
 alias t='brave-browser todoist.com/app/upcoming'
-alias u='sudo zypper update -y; sudo zypper dist-upgrade -y'
+alias u='sudo zypper update -y; sudo zypper upgrade -y'
 function us {
     local url="https://opac.lib.shizuoka.ac.jp/opac/xc/search/"
     url+=${@}
