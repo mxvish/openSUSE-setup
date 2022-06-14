@@ -1,8 +1,10 @@
 #edit & mv files-----------------------------
 mv bashrc .bashrc
 mv -f user-dirs.dirs .config/
+mv profile .profile
 sudo mv custom.conf /etc/gdm/
-mv colorrc .colorrc
+sudo mv grub /etc/default/
+#mv colorrc .colorrc
 
 mv Desktop .Desktop
 mv Downloads .Downloads
@@ -34,16 +36,18 @@ sudo zypper addrepo --refresh https://brave-browser-rpm-release.s3.brave.com/x86
 sudo zypper install -y brave-browser
 
 sudo zypper install -y chrome-gnome-shell
-sudo zypper install -y ibus-mozc
+sudo zypper install -y fcitx fcitx-mozc
+sudo zypper install -y i3
 sudo zypper install -y neofetch
 
 sudo zypper install -y python-tkinter
 sudo zypper install -y R-core
-
 sudo zypper install -y ranger
+sudo zypper install -y w3m
 
-sudo zypper install -y vim
+#mkdir ~/.vim ~/.vim/autoload
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 sudo zypper install -y nodejs
 mv vimrc .vimrc
 
@@ -59,14 +63,6 @@ gsettings set org.gnome.software download-updates false
 gsettings set org.gnome.shell disable-user-extensions true
 gsettings set org.gnome.desktop.search-providers disable-external true
 
-sudo vi /etc/default/grub
-"""
-edit as follows
-...(snip)...
-GRUB_TIMEOUT=5
-GRUB_CMDLINE_LINUX_DEFAULT="splash=silent mitigations=auto quiet psmouse.synaptics_intertouch=1"
-...(snip)...
-"""
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 
 sudo zypper clean -a
