@@ -2,6 +2,8 @@
 mv bashrc .bashrc
 mv -f user-dirs.dirs .config/
 mv profile .profile
+mv Xresources .Xresources
+xrdb .Xresources
 sudo mv custom.conf /etc/gdm/
 sudo mv grub /etc/default/
 #mv colorrc .colorrc
