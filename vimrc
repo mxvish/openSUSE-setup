@@ -60,3 +60,4 @@ inoremap <C-d> <Del>
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 
 nmap <Esc><Esc> :nohlsearch<Esc>
+autocmd TextChanged,TextChangedI <buffer> write 
