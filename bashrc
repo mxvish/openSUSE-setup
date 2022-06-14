@@ -24,7 +24,7 @@ alias g='brave-browser gakujo.shizuoka.ac.jp/portal/'
 alias gi='brave-browser github.com/mxvish?tab=repositories'
 alias ke='brave-browser keep.google.com'
 alias l='ls -a ~/downloads'
-alias m='brave-browser "https://mail.google.com/mail/u/0/h/";brave-browser "https://mail.google.com/mail/u/1/h/"' 
+alias m='brave-browser "https://mail.google.com/mail/u/0/h/"'
 alias ma='brave-browser https://www.youtube.com/c/%E7%B2%BE%E7%A5%9E%E7%A7%91%E5%8C%BB-%E7%9B%8A%E7%94%B0%E8%A3%95%E4%BB%8B%E3%81%AE%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AFTV/videos?view=0&sort=p&flow=grid'
 alias mk='mkdir'
 alias o='brave-browser onedrive.live.com'
@@ -36,8 +36,8 @@ alias re='systemctl reboot -i'
 alias rs='brave-browser https://www.rakuten-sec.co.jp/ITS/V_ACT_Login.html'
 alias rmr='rm -rf'
 alias s='brave-browser app.slack.com/client'
+alias si='sudo zypper install -y'
 alias sr='sudo zypper remove -y'
-alias sz='sudo zypper install -y'
 alias ss='systemctl suspend -i'
 alias t='brave-browser todoist.com/app/upcoming'
 alias u='sudo zypper update -y; sudo zypper dist-upgrade -y'
@@ -48,7 +48,7 @@ function us {
     brave-browser $url
 }
 alias v='vim'
-alias visa='brave-browser docs.google.com/spreadsheets/d/1iuQ-DxULNRZp0QisqnwkH33GpLA8dkec/'
+alias vis='brave-browser docs.google.com/spreadsheets/d/1iuQ-DxULNRZp0QisqnwkH33GpLA8dkec/'
 alias vpn='brave-browser https://vpn.inf.shizuoka.ac.jp/dana-na/auth/url_3/welcome.cgi'
 alias vr='vi ~/rpmsetup.sh'
 alias w='brave-browser google.com/search?q=weather'
@@ -101,10 +101,10 @@ gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 gsettings set org.gnome.desktop.notifications show-banners false
 gsettings set org.gnome.desktop.notifications show-in-lock-screen false
 xrandr --output HDMI-1 --left-of eDP-1
-gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'mozc-jp')]"
+#gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'mozc-jp')]"
 timedatectl set-timezone Asia/Tokyo
 gsettings set org.gnome.shell favorite-apps []
-eval `dircolors ~/.colorrc`
+#eval `dircolors ~/.colorrc`
 
 #configure system settings from tweaks-----------------------------
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.2
