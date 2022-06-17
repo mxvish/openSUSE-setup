@@ -2,6 +2,7 @@
 mv bashrc .bashrc
 mv -f user-dirs.dirs .config/
 mv profile .profile
+mv Xmodmap .Xmodmap
 mv Xresources .Xresources
 xrdb .Xresources
 sudo mv custom.conf /etc/gdm/
