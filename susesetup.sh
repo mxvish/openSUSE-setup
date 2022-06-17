@@ -50,6 +50,7 @@ sudo zypper install -y w3m
 
 git clone https://github.com/mxvish/w3m-keymap.git
 sudo mv w3m-keymap/keymap ~/.w3m
+sudo rm -r w3m-keymap
 
 #mkdir ~/.vim ~/.vim/autoload
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
