@@ -6,7 +6,7 @@ mv Xresources .Xresources
 xrdb .Xresources
 sudo mv custom.conf /etc/gdm/
 sudo mv grub /etc/default/
-#mv colorrc .colorrc
+mv colorrc .colorrc
 
 mv Desktop .Desktop
 mv Downloads .Downloads
