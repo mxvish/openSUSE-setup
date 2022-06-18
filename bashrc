@@ -1,4 +1,3 @@
-#find . -name "filename" (-delete) ex .DS_Store
 #zip -r compressed_filename.zip foldername
 #convert -resize 1073x175 password.png resizedpasswd.png
 #x11vnc -storepasswd
@@ -20,6 +19,7 @@ alias cac='brave-browser docs.google.com/spreadsheets/d/1ECwWvDWYEH4iZL_Hy9V2Xqy
 alias cl='sudo zypper clean -a;sudo zypper cleanlocks'
 alias d='brave-browser drive.google.com/drive/my-drive'
 alias di='brave-browser discord.com/channels/@me'
+alias do='pactl set-sink-volume 0 -10%'
 alias g='brave-browser gakujo.shizuoka.ac.jp/portal/'
 alias gi='brave-browser github.com/mxvish?tab=repositories'
 alias ke='brave-browser keep.google.com'
@@ -42,6 +42,7 @@ alias sr='sudo zypper remove -y'
 alias ss='systemctl suspend -i'
 alias t='brave-browser todoist.com/app/upcoming'
 alias u='sudo zypper update -y; sudo zypper dist-upgrade -y'
+alias up='pactl set-sink-volume 0 +10%'
 function us {
     local url="https://opac.lib.shizuoka.ac.jp/opac/xc/search/"
     url+=${@}
