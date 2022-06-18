@@ -41,6 +41,7 @@ sudo zypper install -y brave-browser
 sudo zypper install -y chrome-gnome-shell
 sudo zypper install -y fcitx fcitx-mozc
 sudo zypper install -y i3
+mv config  .config/i3/
 sudo zypper install -y neofetch
 
 sudo zypper install -y python-tkinter
