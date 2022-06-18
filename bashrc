@@ -24,6 +24,7 @@ alias g='brave-browser gakujo.shizuoka.ac.jp/portal/'
 alias gi='brave-browser github.com/mxvish?tab=repositories'
 alias ke='brave-browser keep.google.com'
 alias l='ls -a ~/downloads'
+alias lo='i3lock'
 alias m='brave-browser "https://mail.google.com/mail/u/0/h/"'
 alias ma='brave-browser https://www.youtube.com/c/%E7%B2%BE%E7%A5%9E%E7%A7%91%E5%8C%BB-%E7%9B%8A%E7%94%B0%E8%A3%95%E4%BB%8B%E3%81%AE%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AFTV/videos?view=0&sort=p&flow=grid'
 alias mk='mkdir'
@@ -48,6 +49,7 @@ function us {
     brave-browser $url
 }
 alias v='vim'
+alias vc='vim ~/.config/i3/config'
 alias vis='brave-browser docs.google.com/spreadsheets/d/1iuQ-DxULNRZp0QisqnwkH33GpLA8dkec/'
 alias vpn='brave-browser https://vpn.inf.shizuoka.ac.jp/dana-na/auth/url_3/welcome.cgi'
 alias vr='vi ~/rpmsetup.sh'
