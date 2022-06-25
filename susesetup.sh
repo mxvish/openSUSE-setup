@@ -5,6 +5,7 @@ mv profile .profile
 mv Xmodmap .Xmodmap
 mv Xresources .Xresources
 xrdb .Xresources
+sudo mv i3status.conf /etc/
 #sudo mv custom.conf /etc/gdm/
 sudo mv grub /etc/default/
 mv colorrc .colorrc
