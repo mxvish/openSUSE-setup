@@ -7,6 +7,9 @@
 #systemctl get-default
 #sudo systemctl set-default multi-user.target(graphical.target)
 
+alias 1='xrandr --output eDP-1 --brightness 0.1'
+alias 2='xrandr --output eDP-1 --brightness 0.2'
+alias 3='xrandr --output eDP-1 --brightness 0.3'
 function as {
     local url="https://amazon.co.jp/s?k="
     url+=${@}
@@ -19,13 +22,12 @@ alias cac='brave-browser docs.google.com/spreadsheets/d/1ECwWvDWYEH4iZL_Hy9V2Xqy
 alias cl='sudo zypper clean -a;sudo zypper cleanlocks'
 alias d='brave-browser drive.google.com/drive/my-drive'
 alias di='brave-browser discord.com/channels/@me'
-alias do='pactl set-sink-volume 0 -10%'
+alias fr='free -m'
 alias g='brave-browser gakujo.shizuoka.ac.jp/portal/'
 alias gi='brave-browser github.com/mxvish?tab=repositories'
 alias ke='brave-browser keep.google.com'
 alias kn='brave-browser https://www.kyorindo-netsuper.jp'
 alias l='ls -a ~/downloads'
-alias lo='i3lock'
 alias m='brave-browser "https://mail.google.com/mail/u/0/h/"'
 alias ma='brave-browser https://www.youtube.com/c/%E7%B2%BE%E7%A5%9E%E7%A7%91%E5%8C%BB-%E7%9B%8A%E7%94%B0%E8%A3%95%E4%BB%8B%E3%81%AE%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AFTV/videos?view=0&sort=p&flow=grid'
 alias mk='mkdir'
@@ -43,7 +45,6 @@ alias sr='sudo zypper remove -y'
 alias ss='systemctl suspend -i'
 alias t='brave-browser todoist.com/app/upcoming'
 alias u='sudo zypper update -y; sudo zypper dist-upgrade -y'
-alias up='pactl set-sink-volume 0 +10%'
 function us {
     local url="https://opac.lib.shizuoka.ac.jp/opac/xc/search/"
     url+=${@}
@@ -57,7 +58,7 @@ alias vpn='brave-browser https://vpn.inf.shizuoka.ac.jp/dana-na/auth/url_3/welco
 alias vr='vi ~/rpmsetup.sh'
 alias w='brave-browser google.com/search?q=weather'
 alias xc='xclip -sel c <'   
-alias xd='xdg-open'
+alias x='xdg-open'
 alias xdd='xdg-open ./'
 alias xe='xrandr --output eDP-1 --brightness'
 alias xh='xrandr --output HDMI-1 --brightness'
