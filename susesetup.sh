@@ -16,19 +16,7 @@ mv Public .Public
 rm -rf Templates Documents Music Pictures Videos
 mkdir downloads
 
-#remove-----------------------------
-sudo zypper remove -y gnome-calendar
-sudo zypper remove -y gnome-contacts
 sudo zypper remove -y firefox
-sudo zypper remove -y gedit
-sudo zypper remove -y gnome-maps
-sudo zypper remove -y gnome-photos
-sudo zypper remove -y gnome-tour
-sudo zypper remove -y gnome-weather
-sudo zypper remove -y rhythmbox
-sudo zypper remove -y cheese
-sudo zypper remove -y gnome-calculator polari quadrapassel swell-foop
-sudo zypper remove -y gnome-clocks gnome-chess gnome-mahjongg gnome-mines gnome-music gnome-sudoku gnome-tweaks lightsoff iagno
 
 sudo zypper update -y
 sudo zypper dist-updrade -y
@@ -48,11 +36,6 @@ sudo zypper install -y neofetch
 sudo zypper install -y python-tkinter
 sudo zypper install -y R-core
 sudo zypper install -y ranger
-sudo zypper install -y w3m
-
-git clone https://github.com/mxvish/w3m-keymap.git
-sudo mv w3m-keymap/keymap ~/.w3m
-sudo rm -r w3m-keymap
 
 #mkdir ~/.vim ~/.vim/autoload
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -80,23 +63,6 @@ sudo zypper cleanlocks
 sudo reboot
 
 """
-settings
-	search 
-		turn off
-	keyboard
-		view and customize ~
-			navigation
- 				switch windows directly=alt+tab
-		custom shortcuts
-			open terminal
-
-	battery settings
-		balanced ->	power saver
-	keyboard shortcuts
-		settings
-		hide all normal windows
-		close window
-
 brave-browser
 	bravepasswd from onedrive
   	remove all history & autofill form data on exit
@@ -108,12 +74,6 @@ brave-browser
 	enable
 		https://extensions.gnome.org/extension/1471/
 	new tab page -> new tabs page shows blank page
-
-desk changer
-	profiles -> location URI
-		remove item /usr/share/*
-		add folder ./pictures/wallpaper
-	daemon 30 min interval
 
 printer
 	Ctrl+P on brave browser
