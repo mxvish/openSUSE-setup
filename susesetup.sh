@@ -12,7 +12,7 @@ mv colorrc .colorrc
 mv Desktop .Desktop
 mv Downloads .Downloads
 mv Public .Public
-rm -rf Templates Documents Music Pictures Videos
+rm -rf Templates Documents Music Pictures Videos LICENSE README.md
 mkdir downloads
 
 sudo zypper remove -y firefox
