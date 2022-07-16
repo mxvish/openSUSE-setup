@@ -39,7 +39,10 @@ packages=(
 for i in "${packages[@]}"; do sudo zypper in -y "$i"; done
 
 mv config  .config/i3/
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+#curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+mkdir ~/.vim ~/.vim/autoload
+wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+mv plug.vim ~/.vim/autoload
 mv vimrc .vimrc
 
 #configure system settings-----------------------------
