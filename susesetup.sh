@@ -24,29 +24,29 @@ sudo zypper dist-updrade -y
 sudo zypper install curl
 sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 sudo zypper addrepo --refresh https://brave-browser-rpm-release.s3.brave.com/x86_64/ brave-browser
-sudo zypper install -y brave-browser
 
-sudo zypper install -y chrome-gnome-shell
-sudo zypper install -y fcitx fcitx-mozc
-sudo zypper install -y i3
+packages=(
+	brave-browser
+	fcitx
+	fcitx-mozc
+	i3
+	neofetch
+	nodejs
+	python-tkinter
+	R-core
+	ranger
+	)
+for i in "${packages[@]}"; do sudo zypper in -y "$i"; done
+
 mv config  .config/i3/
-sudo zypper install -y neofetch
-
-sudo zypper install -y python-tkinter
-sudo zypper install -y R-core
-sudo zypper install -y ranger
-
-#mkdir ~/.vim ~/.vim/autoload
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-sudo zypper install -y nodejs
 mv vimrc .vimrc
 
 #configure system settings-----------------------------
 gsettings set org.gnome.desktop.notifications show-banners false
 gsettings set org.gnome.desktop.notifications show-in-lock-screen false
 xrandr --output HDMI-1 --left-of eDP-1 
-gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'mozc-jp')]"
+#gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'mozc-jp')]"
 timedatectl set-timezone Asia/Tokyo
 
 gsettings set org.gnome.desktop.interface enable-animations false
