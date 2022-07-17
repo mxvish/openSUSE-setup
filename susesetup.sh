@@ -33,7 +33,7 @@ packages=(
 	neofetch
 	nodejs
 	python-tkinter
-	R-core
+	R-base
 	ranger
 	)
 for i in "${packages[@]}"; do sudo zypper in -y "$i"; done
