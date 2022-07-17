@@ -1,5 +1,5 @@
 # openSUSE-setup
-openSUSE setup scripts with GNOME
+openSUSE setup scripts in i3
 
 # Installation & Usage
 <pre>
