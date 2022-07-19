@@ -35,7 +35,7 @@ packages=(
 	python-tkinter
 	R-base
 	ranger
-	)
+	scrot)
 for i in "${packages[@]}"; do sudo zypper in -y "$i"; done
 
 mv config  .config/i3/
