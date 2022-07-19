@@ -192,4 +192,6 @@ bindsym $mod+w exec brave-browser google.com/search?q=weather
 bindsym $mod+x exec i3lock
 bindsym $mod+y exec brave-browser https://youtube.com/playlist?list=LL
 bindsym Mod1+Control+t exec i3-sensible-terminal -fa 'Monospace' -fs 12
+bindsym Print exec scrot
+
 exec xrandr --output eDP-1 --scale 0.8x0.8
