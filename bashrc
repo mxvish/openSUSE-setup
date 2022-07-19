@@ -1,11 +1,8 @@
-#zip -r compressed_filename.zip foldername
 #convert -resize 1073x175 password.png resizedpasswd.png
 #x11vnc -storepasswd
 #x11vnc -usepw
 #/usr/bin/time $SHELL -i -c exit
 #source mysql.sql 
-#systemctl get-default
-#sudo systemctl set-default multi-user.target(graphical.target)
 
 alias 1='xrandr --output eDP-1 --brightness 0.1'
 alias 2='xrandr --output eDP-1 --brightness 0.2'
@@ -15,21 +12,15 @@ function as {
     url+=${@}
     brave-browser $url
 }
-alias b='brave-browser'
-alias c='java ~/first/cd.java'
 alias ca='cat /sys/class/power_supply/BAT1/capacity'
 alias cac='brave-browser docs.google.com/spreadsheets/d/1ECwWvDWYEH4iZL_Hy9V2Xqy0NOVmpsAP/'
 alias cl='sudo zypper clean -a;sudo zypper cleanlocks'
-alias d='brave-browser drive.google.com/drive/my-drive'
-alias di='brave-browser discord.com/channels/@me'
 alias fr='free -m'
 alias g='brave-browser gakujo.shizuoka.ac.jp/portal/'
 alias gi='brave-browser github.com/mxvish?tab=repositories'
 alias ke='brave-browser keep.google.com'
 alias kn='brave-browser https://www.kyorindo-netsuper.jp'
 alias l='ls -a ~/downloads'
-alias m='brave-browser "https://mail.google.com/mail/u/0/h/"'
-alias ma='brave-browser https://www.youtube.com/c/%E7%B2%BE%E7%A5%9E%E7%A7%91%E5%8C%BB-%E7%9B%8A%E7%94%B0%E8%A3%95%E4%BB%8B%E3%81%AE%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AFTV/videos?view=0&sort=p&flow=grid'
 alias mk='mkdir'
 alias o='brave-browser onedrive.live.com'
 alias op='vi ~/.bashrc;source ~/.bashrc'
@@ -37,13 +28,12 @@ alias ou='brave-browser https://outlook.office.com/mail/'
 alias p='python3 -O'
 alias r='ranger'
 alias re='systemctl reboot -i'
+alias rr='rm -rf'
 alias rs='brave-browser https://www.rakuten-sec.co.jp/ITS/V_ACT_Login.html'
-alias rmr='rm -rf'
-alias s='brave-browser app.slack.com/client'
 alias si='sudo zypper install -y'
 alias sr='sudo zypper remove -y'
 alias ss='systemctl suspend -i'
-alias t='brave-browser todoist.com/app/upcoming'
+alias te='brave-browser teams.microsoft.com'
 alias u='sudo zypper update -y; sudo zypper dist-upgrade -y'
 function us {
     local url="https://opac.lib.shizuoka.ac.jp/opac/xc/search/"
@@ -53,16 +43,13 @@ function us {
 }
 alias v='vim'
 alias vc='vim ~/.config/i3/config'
-alias vis='brave-browser docs.google.com/spreadsheets/d/1iuQ-DxULNRZp0QisqnwkH33GpLA8dkec/'
+alias vs='brave-browser docs.google.com/spreadsheets/d/1iuQ-DxULNRZp0QisqnwkH33GpLA8dkec/'
 alias vpn='brave-browser https://vpn.inf.shizuoka.ac.jp/dana-na/auth/url_3/welcome.cgi'
 alias vr='vi ~/rpmsetup.sh'
-alias w='brave-browser google.com/search?q=weather'
 alias xc='xclip -sel c <'   
 alias x='xdg-open'
-alias xdd='xdg-open ./'
 alias xe='xrandr --output eDP-1 --brightness'
 alias xh='xrandr --output HDMI-1 --brightness'
-alias y='brave-browser youtube.com/playlist?list=LL'
 function ys {
   local url="https://youtube.com/results?search_query="
   url+=${@}
@@ -98,7 +85,7 @@ function ys {
 
 test -s ~/.alias && . ~/.alias || true
 
-xrandr --output eDP-1 --brightness 0.5
+xrandr --output eDP-1 --brightness 0.2
 #xrandr --output HDMI-1 --brightness 0.5
 
 #configure system settings-----------------------------
