@@ -92,7 +92,7 @@ xrandr --output eDP-1 --brightness 0.2
 gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 gsettings set org.gnome.desktop.notifications show-banners false
 gsettings set org.gnome.desktop.notifications show-in-lock-screen false
-#xrandr --output HDMI-1 --left-of eDP-1
+#xrandr --output HDMI-1 --auto --left-of eDP-1
 timedatectl set-timezone Asia/Tokyo
 eval `dircolors ~/.colorrc`
 
