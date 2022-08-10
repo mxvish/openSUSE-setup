@@ -7,6 +7,10 @@ sudo mv grub /etc/default/
 mv colorrc .colorrc
 echo '[Settings]
 gtk-key-theme-name = Emacs' > .config/gtk-3.0/settings.ini
+echo 'clear lock
+clear control
+keycode 66 = Control_L
+add control = Control_L Control_R' > .Xmodmap
 
 mv Desktop .Desktop
 mv Downloads .Downloads
