@@ -9,7 +9,7 @@ mv colorrc .colorrc
 mv Desktop .Desktop
 mv Downloads .Downloads
 mv Public .Public
-rm -rf Templates Documents Music Pictures Videos LICENSE README.md
+rm -rf Templates Documents Music Pictures Videos LICENSE README.md openSUSE-setup
 mkdir downloads
 
 sudo zypper remove -y firefox
