@@ -89,9 +89,7 @@ eval `dircolors ~/.colorrc`
 
 #configure system settings from tweaks-----------------------------
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.2
-gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"
 gsettings set org.gnome.desktop.search-providers disable-external true
-gsettings set org.gnome.desktop.interface gtk-key-theme 'Emacs'
 
 PROMPT_COMMAND="printf '\n';$PROMPT_COMMAND"
 export PS1="\W \$"
