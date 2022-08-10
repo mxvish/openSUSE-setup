@@ -5,6 +5,8 @@ mv profile .profile
 sudo mv i3status.conf /etc/
 sudo mv grub /etc/default/
 mv colorrc .colorrc
+echo '[Settings]
+gtk-key-theme-name = Emacs' > .config/gtk-3.0/settings.ini
 
 mv Desktop .Desktop
 mv Downloads .Downloads
