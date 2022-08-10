@@ -7,18 +7,15 @@
 alias 1='xrandr --output eDP-1 --brightness 0.1'
 alias 2='xrandr --output eDP-1 --brightness 0.2'
 alias 3='xrandr --output eDP-1 --brightness 0.3'
-function as {
-    local url="https://amazon.co.jp/s?k="
-    url+=${@}
-    brave-browser $url
-}
+alias 5='xrandr --output eDP-1 --brightness 0.5'
+alias bi='brew install'
+alias br='brew remove'
 alias ca='cat /sys/class/power_supply/BAT1/capacity'
 alias cac='brave-browser docs.google.com/spreadsheets/d/1ECwWvDWYEH4iZL_Hy9V2Xqy0NOVmpsAP/'
 alias cl='sudo zypper clean -a;sudo zypper cleanlocks'
 alias fr='free -m'
 alias g='brave-browser gakujo.shizuoka.ac.jp/portal/'
 alias gi='brave-browser github.com/mxvish?tab=repositories'
-alias ke='brave-browser keep.google.com'
 alias kn='brave-browser https://www.kyorindo-netsuper.jp'
 alias l='ls -a ~/downloads'
 alias mk='mkdir'
@@ -45,16 +42,10 @@ alias v='vim'
 alias vc='vim ~/.config/i3/config'
 alias vs='brave-browser docs.google.com/spreadsheets/d/1iuQ-DxULNRZp0QisqnwkH33GpLA8dkec/'
 alias vpn='brave-browser https://vpn.inf.shizuoka.ac.jp/dana-na/auth/url_3/welcome.cgi'
-alias vr='vi ~/rpmsetup.sh'
 alias xc='xclip -sel c <'   
 alias x='xdg-open'
 alias xe='xrandr --output eDP-1 --brightness'
 alias xh='xrandr --output HDMI-1 --brightness'
-function ys {
-  local url="https://youtube.com/results?search_query="
-  url+=${@}
-  brave-browser $url
-}
 
 # Sample .bashrc for SuSE Linux
 # Copyright (c) SuSE GmbH Nuernberg
@@ -92,7 +83,7 @@ xrandr --output eDP-1 --brightness 0.2
 gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 gsettings set org.gnome.desktop.notifications show-banners false
 gsettings set org.gnome.desktop.notifications show-in-lock-screen false
-#xrandr --output HDMI-1 --auto --left-of eDP-1
+xrandr --output HDMI-1 --auto --left-of eDP-1
 timedatectl set-timezone Asia/Tokyo
 eval `dircolors ~/.colorrc`
 
