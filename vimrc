@@ -56,6 +56,9 @@ inoremap <C-a> <Home>
 inoremap <C-f> <Right>
 inoremap <C-b> <Left>
 inoremap <C-d> <Del>
+inoremap <C-h> <BackSpace>
+inoremap <C-n> <Down>
+inoremap <C-p> <Up>
 
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 
